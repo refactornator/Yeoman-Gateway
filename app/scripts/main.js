@@ -13,6 +13,10 @@ require.config({
             ],
             exports: 'Backbone'
         },
+        marionette : {
+            deps : ['backbone'],
+            exports : 'Backbone.Marionette'
+        },
         bootstrap: {
             deps: ['jquery'],
             exports: 'jquery'
@@ -21,13 +25,22 @@ require.config({
     paths: {
         jquery: '../components/jquery/jquery',
         backbone: '../components/backbone-amd/backbone',
+        marionette : '../components/backbone.marionette/lib/core/amd/backbone.marionette',
         underscore: '../components/underscore-amd/underscore',
+        tpl: '../components/requirejs-tpl/tpl',
         bootstrap: 'vendor/bootstrap'
     }
 });
 
 require([
-    'backbone'
-], function (Backbone) {
+    'app',
+    'backbone',
+    'routes/gateway-router'
+], function (app, Backbone, GatewayRouter) {
+    'use strict';
+
+    app.start();
+    new GatewayRouter({
+    });
     Backbone.history.start();
 });
