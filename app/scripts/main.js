@@ -15,7 +15,7 @@ require.config({
         },
         marionette : {
             deps : ['backbone'],
-            exports : 'Backbone.Marionette'
+            exports : 'Marionette'
         },
         bootstrap: {
             deps: ['jquery'],
@@ -25,7 +25,7 @@ require.config({
     paths: {
         jquery: '../components/jquery/jquery',
         backbone: '../components/backbone-amd/backbone',
-        marionette : '../components/backbone.marionette/lib/core/amd/backbone.marionette',
+        marionette: '../components/backbone.marionette/lib/backbone.marionette',
         underscore: '../components/underscore-amd/underscore',
         tpl: '../components/requirejs-tpl/tpl',
         bootstrap: 'vendor/bootstrap'
@@ -35,12 +35,14 @@ require.config({
 require([
     'app',
     'backbone',
-    'routes/gateway-router'
-], function (app, Backbone, GatewayRouter) {
+    'routes/gateway-router',
+    'controllers/gateway-controller'
+], function (app, Backbone, GatewayRouter, GatewayController) {
     'use strict';
 
     app.start();
     new GatewayRouter({
+        controller: GatewayController
     });
     Backbone.history.start();
 });

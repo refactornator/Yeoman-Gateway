@@ -2,14 +2,12 @@
 
 define([
     'marionette'
-], function (marionette) {
+], function (Marionette) {
     'use strict';
 
-    return marionette.AppRouter.extend({
+    return Marionette.AppRouter.extend({
         appRoutes: {
-            ''                : 'login',
-            'signup'          : 'signup',
-            'forgot-password' : 'forgot-password'
+            ''                : 'login'
         },
 
     });
