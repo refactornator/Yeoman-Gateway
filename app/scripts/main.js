@@ -7,14 +7,11 @@ require.config({
             exports: '_'
         },
         backbone: {
-            deps: [
-                'underscore',
-                'jquery'
-            ],
+            deps: ['jquery', 'underscore'],
             exports: 'Backbone'
         },
         marionette : {
-            deps : ['backbone'],
+            deps : ['jquery', 'underscore', 'backbone'],
             exports : 'Marionette'
         },
         bootstrap: {
@@ -25,7 +22,9 @@ require.config({
     paths: {
         jquery: '../components/jquery/jquery',
         backbone: '../components/backbone-amd/backbone',
-        marionette: '../components/backbone.marionette/lib/backbone.marionette',
+        marionette: '../components/backbone.marionette/lib/core/amd/backbone.marionette',
+        'backbone.wreqr' : '../components/backbone.wreqr/lib/amd/backbone.wreqr',
+        'backbone.babysitter' : '../components/backbone.babysitter/lib/amd/backbone.babysitter',
         underscore: '../components/underscore-amd/underscore',
         tpl: '../components/requirejs-tpl/tpl',
         bootstrap: 'vendor/bootstrap'

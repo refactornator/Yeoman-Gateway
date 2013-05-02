@@ -1,7 +1,7 @@
 /*global $*/
 define(
-  ['marionette','models/user-model','views/Login-view'],
-  function(Marionette, UserModel, LoginView){
+  ['marionette','vent','models/user-model','views/Login-view'],
+  function(Marionette, vent, UserModel, LoginView){
     "use strict";
 
     var app = new Marionette.Application();
