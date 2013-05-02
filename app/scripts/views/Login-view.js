@@ -5,7 +5,7 @@ define(['marionette','templates'], function (Marionette, JST) {
 
     var LoginView = Marionette.ItemView.extend({
         template: JST['app/scripts/templates/Login.ejs']
-	});
+    });
 
     return LoginView;
 });
