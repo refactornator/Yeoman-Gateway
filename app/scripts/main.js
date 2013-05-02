@@ -37,8 +37,6 @@ require([
     'routes/gateway-router',
     'controllers/gateway-controller'
 ], function (app, Backbone, GatewayRouter, GatewayController) {
-    'use strict';
-
     app.start();
     new GatewayRouter({
         controller: GatewayController

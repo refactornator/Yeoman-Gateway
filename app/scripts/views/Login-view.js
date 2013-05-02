@@ -1,16 +1,11 @@
 /*global define*/
 
-define([
-    'jquery',
-    'underscore',
-    'backbone',
-    'templates',
-], function ($, _, Backbone, JST) {
+define(['marionette','templates'], function (Marionette, JST) {
     'use strict';
 
-    var LoginView = Backbone.View.extend({
+    var LoginView = Marionette.ItemView.extend({
         template: JST['app/scripts/templates/Login.ejs']
-    });
+	});
 
     return LoginView;
 });

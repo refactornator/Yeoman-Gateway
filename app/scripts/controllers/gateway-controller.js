@@ -1,11 +1,11 @@
 /*global define*/
 
-define([], function () {
-  "use strict";
+define(['app'], function (Gateway) {
+	'use strict';
 
-  return {
-    login : function(param) {
-      console.log('LOG IN VIEW');
-    }
-  };
+	return {
+		login : function() {
+			console.log('LOG IN VIEW');
+		}
+	};
 });
