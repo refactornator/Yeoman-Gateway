@@ -1,6 +1,69 @@
 @import 'sass-bootstrap/lib/bootstrap';
 
+body {
+    background: url("../images/bg-body.jpg") repeat top left;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    margin: 0 auto 33px auto;
+}
+
+form {
+    margin: 0 0 30px;
+}
+
 .hero-unit {
-    margin: 50px auto 0 auto;
     width: 300px;
+    position: relative;
+    margin: 50px auto 0 auto;
+
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+}
+
+input {
+    width: 286px;
+}
+
+label#remember-me {
+    color: #888
+}
+
+button#forgot-password {
+    padding-right: 0;
+}
+
+form button[type=submit] {
+    color: #686D6E;
+
+    font-size: 24px;
+    text-transform: uppercase;
+
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px 0 15px;
+}
+
+.btn-toolbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+}
+
+.btn-group .btn {
+    height: 69px;
+    text-transform: capitalize;
+}
+
+.btn-group .btn.left {
+    width: 211px;
+}
+
+.btn-group .btn.right {
+    width: 210px;
 }
