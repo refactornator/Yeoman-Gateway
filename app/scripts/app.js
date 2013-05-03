@@ -7,16 +7,29 @@ function(Marionette, vent, UserModel, LoginView){
 
     var app = new Marionette.Application();
 
+    var FadeInRegion = Marionette.Region.extend({
+        el: '#main',
+
+        open: function(view){
+            this.$el.hide();
+            this.$el.html(view.el);
+            this.$el.fadeIn();
+        }
+
+    });
+
     app.addRegions({
-        main: '#main'
+        main: FadeInRegion
+    });
+
+    var user = new UserModel();
+
+    var loginView = new LoginView({
+        model : user
     });
 
     app.addInitializer(function(){
-
-        app.main.show(new LoginView({
-            model : new UserModel()
-        }));
-
+        app.main.show(loginView);
     });
 
     return app;
