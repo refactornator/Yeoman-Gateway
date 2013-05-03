@@ -9,7 +9,9 @@
     "requirejs-tpl": "latest",
     "backbone-amd": "~1.0.0",
     "underscore-amd": "~1.4.4",
-    "backbone.marionette": "latest",
+    "backbone.marionette": "~1.0.2",
+    "backbone.wreqr": "~0.2.0",
+    "backbone.babysitter": "~0.0.5",
     "modernizr": "~2.6.2"
   },
   "devDependencies": {}
