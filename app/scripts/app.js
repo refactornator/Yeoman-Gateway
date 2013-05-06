@@ -13,7 +13,7 @@ function(Marionette, vent, UserModel, LoginView){
         open: function(view){
             this.$el.hide();
             this.$el.html(view.el);
-            this.$el.fadeIn();
+            this.$el.fadeIn('slow');
         }
 
     });
