@@ -1,19 +1,25 @@
 /*global define*/
 
-define(['app','models/user-model','views/Login-view','views/Register-view'], function (Gateway,UserModel,LoginView,RegisterView) {
+define(['gateway'], function (Gateway) {
     'use strict';
 
-    return {
-        login : function() {
-            Gateway.main.show(new LoginView({
-                model : new UserModel()
-            }));
+    var routerController = {
+        login: function() {
+            require(['models/user-model', 'views/Login-view'], function(UserModel, LoginView){
+                Gateway.main.show(new LoginView({
+                    model : new UserModel()
+                }));
+            })
         },
 
         signup: function() {
-            Gateway.main.show(new RegisterView({
-                model : new UserModel()
-            }));
+            require(['models/user-model', 'views/Register-view'], function(UserModel, RegisterView){
+                Gateway.main.show(new RegisterView({
+                    model : new UserModel()
+                }));
+            });
         }
     };
+
+    return routerController;
 });

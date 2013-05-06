@@ -1,15 +1,20 @@
 /*global define*/
 
 define([
-    'marionette'
-], function (Marionette) {
+    'marionette',
+    'controllers/gateway-controller'
+], function (Marionette, GatewayController) {
     'use strict';
 
-    return Marionette.AppRouter.extend({
+    var GatewayRouter = Marionette.AppRouter.extend({
+
         appRoutes: {
+            ''                : 'login',
             'login'           : 'login',
-            'signup'		  : 'signup'
-        },
+            'signup'          : 'signup'
+        }
 
     });
+
+    return new GatewayRouter({controller: GatewayController});
 });

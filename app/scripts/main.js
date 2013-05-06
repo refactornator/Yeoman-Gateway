@@ -32,14 +32,10 @@ require.config({
 });
 
 require([
-    'app',
-    'backbone',
-    'routes/gateway-router',
-    'controllers/gateway-controller'
-], function (app, Backbone, GatewayRouter, GatewayController) {
-    app.start();
-    new GatewayRouter({
-        controller: GatewayController
-    });
-    Backbone.history.start();
+    'gateway','routes/gateway-router'
+], function (Gateway, GatewayRouter) {
+
+    Gateway.Router = GatewayRouter;
+    Gateway.start();
+
 });
