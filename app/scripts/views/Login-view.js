@@ -8,10 +8,16 @@ define(['backbone','marionette','templates'], function (Backbone, Marionette, JS
         template: JST['app/scripts/templates/Login.ejs'],
 
         events: {
+            'click button.login': 'login',
             'click button.show-register': 'showRegister'
         },
 
-        showRegister: function(e) {
+        login: function(e) {
+            e.preventDefault();
+            console.log('logging in');
+        },
+
+        showRegister: function() {
             Backbone.history.navigate('#signup', {trigger: true});
         }
     });

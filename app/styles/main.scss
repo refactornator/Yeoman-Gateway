@@ -37,7 +37,8 @@ button#forgot-password {
     padding-right: 0;
 }
 
-form button[type=submit] {
+form button.login,
+form button.register {
     color: #686D6E;
 
     font-size: 24px;
