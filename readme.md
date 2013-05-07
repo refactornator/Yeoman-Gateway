@@ -6,6 +6,8 @@ Maintainer: [William Lindner](https://github.com/wlindner) - [@wlindner](http://
 
 This project aims to give you a starting point for a large Client Side MV* webapp. [Marionette](http://marionettejs.com) and [Backbone](http://backbonejs.com) provide Model/Collection/View/Event handling. [Require.js](http://requirejs.org) handles modularization and dependency loading. [Yeoman](http://yeoman.io) wraps it all up and makes it easier to develop, test and extend.
 
+Initially, this just looks like a Web App Login/Signup screen, but serves as a starting point for a new Web App and an example of [Marionette.js](http://marionettejs.com) + [Require.js](http://requirejs.org) + [Yeoman](http://yeoman.io) best practices.
+
 ## Demo
 [http://williamlindner.com/Yeoman-Gateway](http://bit.ly/Yeoman-Gateway)
 
