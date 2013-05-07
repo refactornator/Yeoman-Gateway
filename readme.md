@@ -7,7 +7,7 @@ Maintainer: [William Lindner](https://github.com/wlindner) - [@wlindner](http://
 This project aims to give you a starting point for a large Client Side MV* webapp. [Marionette](http://marionettejs.com) and [Backbone](http://backbonejs.com) provide Model/Collection/View/Event handling. [Require.js](http://requirejs.org) handles modularization and dependency loading. [Yeoman](http://yeoman.io) wraps it all up and makes it easier to develop, test and extend.
 
 ## Demo
-[http://williamlindner.com/Yeoman-Gateway](http://williamlindner.com/Yeoman-Gateway)
+[http://williamlindner.com/Yeoman-Gateway](http://bit.ly/Yeoman-Gateway)
 
 ## Getting Started
 #### If you've never installed [Yeoman](http://yeoman.io) before, do this first.
