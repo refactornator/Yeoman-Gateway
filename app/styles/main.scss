@@ -1,9 +1,18 @@
 @import 'sass-bootstrap/lib/bootstrap';
 
+html,
 body {
-    background: url("../images/bg-body.jpg") repeat top left;
+    height: 100%;
     margin: 0;
     padding: 0;
+}
+
+body, #footer {
+    background: url("../images/bg-body.jpg") repeat top left;
+}
+
+#footer {
+    padding: 20px;
 }
 
 img {
