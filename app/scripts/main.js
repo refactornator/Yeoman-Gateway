@@ -23,8 +23,9 @@ require.config({
         jquery: '../components/jquery/jquery',
         backbone: '../components/backbone-amd/backbone',
         marionette: '../components/backbone.marionette/lib/core/amd/backbone.marionette',
-        'backbone.wreqr' : '../components/backbone.wreqr/lib/amd/backbone.wreqr',
-        'backbone.babysitter' : '../components/backbone.babysitter/lib/amd/backbone.babysitter',
+        'backbone.wreqr': '../components/backbone.wreqr/lib/amd/backbone.wreqr',
+        'backbone.babysitter': '../components/backbone.babysitter/lib/amd/backbone.babysitter',
+        'backbone-validation': '../components/backbone-validation/dist/backbone-validation-amd',
         underscore: '../components/underscore-amd/underscore',
         tpl: '../components/requirejs-tpl/tpl',
         bootstrap: 'vendor/bootstrap'
