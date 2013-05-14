@@ -25,6 +25,7 @@ require.config({
         marionette: '../components/backbone.marionette/lib/core/amd/backbone.marionette',
         'backbone.wreqr': '../components/backbone.wreqr/lib/amd/backbone.wreqr',
         'backbone.babysitter': '../components/backbone.babysitter/lib/amd/backbone.babysitter',
+        'backbone.syphon': '../components/backbone.syphon/lib/amd/backbone.syphon',
         'backbone-validation': '../components/backbone-validation/dist/backbone-validation-amd',
         underscore: '../components/underscore-amd/underscore',
         tpl: '../components/requirejs-tpl/tpl',

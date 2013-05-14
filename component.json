@@ -13,6 +13,7 @@
     "backbone.wreqr": "~0.2.0",
     "backbone.babysitter": "~0.0.5",
     "backbone-validation": "~0.7.1",
+    "backbone.syphon": "~0.4.1",
     "modernizr": "~2.6.2"
   },
   "devDependencies": {}

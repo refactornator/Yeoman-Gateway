@@ -1,6 +1,6 @@
 /*global define*/
 
-define(['jquery', 'backbone','marionette','templates','backbone-validation'], function ($, Backbone, Marionette, JST, Validation) {
+define(['jquery', 'backbone','marionette','templates','backbone-validation','backbone.syphon'], function ($, Backbone, Marionette, JST, Validation, Syphon) {
     'use strict';
 
     var RegisterView = Marionette.ItemView.extend({
@@ -9,8 +9,7 @@ define(['jquery', 'backbone','marionette','templates','backbone-validation'], fu
 
         events: {
             'click button.register': 'register',
-            'click button.show-login': 'showLogin',
-            'blur input': 'updateModel'
+            'click button.show-login': 'showLogin'
         },
 
         onRender: function() {
@@ -20,25 +19,20 @@ define(['jquery', 'backbone','marionette','templates','backbone-validation'], fu
             this.model.on('validated:invalid', this.invalid, this);
         },
 
-        updateModel: function(el){
-            var $el = $(el.target);
-            debugger;
-            this.model.set($el.attr('name'), $el.val());
-        },
-
         valid: function(view, attr, selector) {
             console.log('valid');
         },
 
         invalid: function(view, attr, error, selector) {
-            debugger;
             console.log('invalid');
         },
 
         register: function(e) {
             e.preventDefault();
-            debugger;
-            var isValid = this.model.isValid(true);
+
+            var data = Syphon.serialize(this);
+            this.model.set(data);
+
             console.log('registering');
         },
 

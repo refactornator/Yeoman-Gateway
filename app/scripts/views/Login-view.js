@@ -30,13 +30,14 @@ define(['jquery', 'backbone','marionette','templates','backbone-validation'], fu
         },
 
         invalid: function(view, attr, error, selector) {
-            debugger;
             console.log('invalid');
         },
 
         login: function(e) {
             e.preventDefault();
+            
             var isValid = this.model.isValid(true);
+
             console.log('logging in');
         },
 
