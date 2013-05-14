@@ -6,7 +6,7 @@ define([
 ], function (_, Backbone) {
     'use strict';
 
-    var UserModel = Backbone.Model.extend({
+    var RegisterUserModel = Backbone.Model.extend({
         defaults:{
         },
         validation: {
@@ -22,17 +22,13 @@ define([
                 msg: 'Please enter a password'
             },{
                 minLength: 6,
-                msg: 'Please enter a valid email'
+                msg: 'Please enter a valid password'
             }],
-            passwordConfirm: [{
-                required: true,
-                msg: 'Please confirm your password'
-            },{
-                equalTo: 'password',
-                msg: 'Your password confirmation does not match'
-            }]
+            passwordConfirm: {
+                equalTo: 'password'
+            }
         }
     });
 
-    return UserModel;
+    return RegisterUserModel;
 });

@@ -1,18 +1,18 @@
 /*global define*/
 
-define(['gateway','models/user-model','views/Login-view','views/Register-view'], function (Gateway, UserModel, LoginView, RegisterView) {
+define(['gateway','models/loginUser-model','models/registerUser-model','views/Login-view','views/Register-view'], function (Gateway, LoginUserModel, RegisterUserModel, LoginView, RegisterView) {
     'use strict';
 
     var routerController = {
         login: function() {
             Gateway.main.show(new LoginView({
-                model : new UserModel()
+                model : new LoginUserModel()
             }));
         },
 
         signup: function() {
             Gateway.main.show(new RegisterView({
-                model : new UserModel()
+                model : new RegisterUserModel()
             }));
         }
     };

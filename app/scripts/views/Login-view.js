@@ -1,6 +1,6 @@
 /*global define*/
 
-define(['backbone','marionette','templates','backbone-validation'], function (Backbone, Marionette, JST, Validation) {
+define(['jquery', 'backbone','marionette','templates','backbone-validation'], function ($, Backbone, Marionette, JST, Validation) {
     'use strict';
 
     var LoginView = Marionette.ItemView.extend({
@@ -25,17 +25,18 @@ define(['backbone','marionette','templates','backbone-validation'], function (Ba
             this.model.set($el.attr('name'), $el.val());
         },
 
-        valid: function(){
+        valid: function(view, attr, selector) {
             console.log('valid');
         },
 
-        invalid: function(){
+        invalid: function(view, attr, error, selector) {
+            debugger;
             console.log('invalid');
         },
 
         login: function(e) {
             e.preventDefault();
-            var isValid = this.model.isValid(['email', 'password']);
+            var isValid = this.model.isValid(true);
             console.log('logging in');
         },
 
