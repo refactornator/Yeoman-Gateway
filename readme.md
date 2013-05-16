@@ -1,12 +1,10 @@
 # Yeoman-Gateway
 
-An example to get you started using [Marionette.js](http://marionettejs.com/) + [Require.js](http://requirejs.org/) with [Yeoman](http://yeoman.io).
-
-Maintainer: [William Lindner](https://github.com/wlindner) - [@wlindner](http://twitter.com/wlindner)
+An example to get you started using [Marionette.js](http://marionettejs.com/) + [Require.js](http://requirejs.org/) with [Yeoman](http://yeoman.io). Initially, this just looks like a Web App Login/Signup screen, but serves as a starting point for a new Web App and an example of [Marionette.js](http://marionettejs.com) + [Require.js](http://requirejs.org) + [Yeoman](http://yeoman.io) best practices.
 
 This project aims to give you a starting point for a large Client Side MV* webapp. [Marionette](http://marionettejs.com) and [Backbone](http://backbonejs.com) provide Model/Collection/View/Event handling. [Require.js](http://requirejs.org) handles modularization and dependency loading. [Yeoman](http://yeoman.io) wraps it all up and makes it easier to develop, test and extend.
 
-Initially, this just looks like a Web App Login/Signup screen, but serves as a starting point for a new Web App and an example of [Marionette.js](http://marionettejs.com) + [Require.js](http://requirejs.org) + [Yeoman](http://yeoman.io) best practices.
+Loosely based on [this](http://stackoverflow.com/questions/11410059/suggested-bootstrap-boilerplate-sample-for-backbone-marionette-application/11598371#11598371) post on StackOverflow.
 
 ## Demo
 [http://williamlindner.com/Yeoman-Gateway](http://bit.ly/Yeoman-Gateway)
@@ -20,6 +18,7 @@ Initially, this just looks like a Web App Login/Signup screen, but serves as a s
 * Clone or download this repo.
 * Run `npm install && bower install` in the cloned directory.
 * Run `grunt server`. (This will open `http://localhost:9000` in a browser)
+* Take a nap, you look tired.
 
 ## About
 #### Libraries Used
@@ -31,6 +30,4 @@ Initially, this just looks like a Web App Login/Signup screen, but serves as a s
 * [Require.js](http://requirejs.org/)
 * [generator-backbone](https://github.com/yeoman/generator-backbone)
 
-
-
-
+Maintainer: [William Lindner](https://github.com/wlindner) - [@wlindner](http://twitter.com/wlindner)
